@@ -1,0 +1,1160 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.5">
+    
+    
+      
+        <title>test - Test Project</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="https://s.yimg.com/qs/mall/yps/common/application-min.2017-0802-151733.css">
+      <link rel="stylesheet" href="https://s.yimg.com/qs/auc/frontend/201705xx/statics/css/pure/pure-min.css"/>
+      <link rel="stylesheet" href="https://s.yimg.com/qs/auc/frontend/201705xx/statics/css/pure/grids-responsive-min.css"/>
+      <link rel="stylesheet" href="../assets/stylesheets/customize.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header-custom" >
+  <div class="navHeader pure-menu pure-menu-horizontal" >
+      <ul class="pure-menu-list">
+          <li class="pure-menu-item" >
+              <div>
+                  <input type="search" class="searchBox" placeholder="Search" onKeyPress="handleSearchKeyPress(event)">
+              </div>
+          </li>
+          <li class="pure-menu-item header-list"><a href="/dashboard/create" class="pure-menu-link">Create</a>
+          </li>
+          <li class="pure-menu-item header-list"><a href="/dashboard/contact" class="pure-menu-link">About</a>
+          </li>
+      </ul>
+      <a href="/dashboard/" class="pure-menu-heading pure-menu-link navTitle">APEX</a>
+  </div>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Test Project
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Documents
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Documents
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        test
+      </label>
+    
+    <a href="./" title="test" class="md-nav__link md-nav__link--active">
+      test
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#projectresponse" title="ProjectResponse" class="md-nav__link">
+    ProjectResponse
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-projects" title="POST /projects/" class="md-nav__link">
+    POST /projects/
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters" title="Request parameters:" class="md-nav__link">
+    Request parameters:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responses" title="Responses:" class="md-nav__link">
+    Responses:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put-projectsid" title="PUT /projects/{id}" class="md-nav__link">
+    PUT /projects/{id}
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters_1" title="Request parameters:" class="md-nav__link">
+    Request parameters:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responses_1" title="Responses:" class="md-nav__link">
+    Responses:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-projectsid" title="GET /projects/{id}" class="md-nav__link">
+    GET /projects/{id}
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters_2" title="Request parameters:" class="md-nav__link">
+    Request parameters:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responses_2" title="Responses:" class="md-nav__link">
+    Responses:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nullresponse" title="NullResponse" class="md-nav__link">
+    NullResponse
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-oauthtokens" title="POST /oAuthTokens" class="md-nav__link">
+    POST /oAuthTokens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters_3" title="Request parameters:" class="md-nav__link">
+    Request parameters:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responses_3" title="Responses:" class="md-nav__link">
+    Responses:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" title="Types" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apex_reserved_swaggerui/" title="Swagger UI" class="md-nav__link">
+      Swagger UI
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Foo xxx
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Foo xxx
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Foo_1/" title="Foo 1" class="md-nav__link">
+      Foo 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Foo_3/" title="Foo 3" class="md-nav__link">
+      Foo 3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Other links
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Other links
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../copyright/" title="Copyright" class="md-nav__link">
+      Copyright
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#projectresponse" title="ProjectResponse" class="md-nav__link">
+    ProjectResponse
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-projects" title="POST /projects/" class="md-nav__link">
+    POST /projects/
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters" title="Request parameters:" class="md-nav__link">
+    Request parameters:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responses" title="Responses:" class="md-nav__link">
+    Responses:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put-projectsid" title="PUT /projects/{id}" class="md-nav__link">
+    PUT /projects/{id}
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters_1" title="Request parameters:" class="md-nav__link">
+    Request parameters:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responses_1" title="Responses:" class="md-nav__link">
+    Responses:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-projectsid" title="GET /projects/{id}" class="md-nav__link">
+    GET /projects/{id}
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters_2" title="Request parameters:" class="md-nav__link">
+    Request parameters:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responses_2" title="Responses:" class="md-nav__link">
+    Responses:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nullresponse" title="NullResponse" class="md-nav__link">
+    NullResponse
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-oauthtokens" title="POST /oAuthTokens" class="md-nav__link">
+    POST /oAuthTokens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-parameters_3" title="Request parameters:" class="md-nav__link">
+    Request parameters:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responses_3" title="Responses:" class="md-nav__link">
+    Responses:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" title="Types" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="the-apex-api">The Apex API</h1>
+<p>This API has the following attributes:</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>namespace</td>
+<td>com.yahoo.apex.parsec</td>
+</tr>
+<tr>
+<td>version</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resources">Resources</h2>
+<h3 id="projectresponse"><a href="#ProjectResponse">ProjectResponse</a></h3>
+<h4 id="post-projects">POST /projects/</h4>
+<h4 id="request-parameters">Request parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Source</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>creationRequest</td>
+<td><a href="#projectrequest">ProjectRequest</a></td>
+<td>body</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wssid</td>
+<td>String</td>
+<td>header: X-YahooWSSID-Authorization</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="responses">Responses:</h4>
+<p>Expected:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>202 Accepted</td>
+<td><a href="#projectresponse">ProjectResponse</a></td>
+</tr>
+</tbody>
+</table>
+<p>Exception:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400 Bad Request</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>401 Unauthorized</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>403 Forbidden</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>409 Conflict</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>500 Internal Server Error</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="put-projectsid">PUT /projects/{id}</h4>
+<h4 id="request-parameters_1">Request parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Source</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>UUID</td>
+<td>path</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>project</td>
+<td><a href="#projectrequest">ProjectRequest</a></td>
+<td>body</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wssid</td>
+<td>String</td>
+<td>header: X-YahooWSSID-Authorization</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="responses_1">Responses:</h4>
+<p>Expected:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200 OK</td>
+<td>ProjectResponse</td>
+</tr>
+</tbody>
+</table>
+<p>Exception:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400 Bad Request</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>401 Unauthorized</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>403 Forbidden</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>404 Not Found</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>409 Conflict</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>500 Internal Server Error</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="get-projectsid">GET /projects/{id}</h4>
+<h4 id="request-parameters_2">Request parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Source</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>UUID</td>
+<td>path</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="responses_2">Responses:</h4>
+<p>Expected:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200 OK</td>
+<td>ProjectResponse</td>
+</tr>
+</tbody>
+</table>
+<p>Exception:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400 Bad Request</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>401 Unauthorized</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>404 Not Found</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>500 Internal Server Error</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="nullresponse"><a href="#NullResponse">NullResponse</a></h3>
+<h4 id="post-oauthtokens">POST /oAuthTokens</h4>
+<h4 id="request-parameters_3">Request parameters:</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Source</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>oAuthData</td>
+<td><a href="#oauthdata">OAuthData</a></td>
+<td>body</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wssid</td>
+<td>String</td>
+<td>header: X-YahooWSSID-Authorization</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="responses_3">Responses:</h4>
+<p>Expected:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>204 No Content</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Exception:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400 Bad Request</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>401 Unauthorized</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>403 Forbidden</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+<tr>
+<td>500 Internal Server Error</td>
+<td>ResourceError</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="types">Types</h2>
+<h3 id="datetime"><a name="DateTime"></a> DateTime</h3>
+<p>e.g.2013-03-06T11:00:00Z</p>
+<p><code>DateTime</code> is a <code>String</code> type.</p>
+<h3 id="projectrequest"><a name="ProjectRequest"></a> ProjectRequest</h3>
+<p><code>ProjectRequest</code> is a <code>Struct</code> type with the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>repoUrl</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>custodian</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>description</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="projectresponse_1"><a name="ProjectResponse"></a> ProjectResponse</h3>
+<p><code>ProjectResponse</code> is a <code>Struct</code> type with the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>UUID</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>repoUrl</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>custodian</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>description</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>repo_update_time</td>
+<td><a href="#datetime">DateTime</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>repo_head_sha</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>doc_generated_time</td>
+<td><a href="#datetime">DateTime</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>doc_url</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>review_url</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>splunk_dashboard_url</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>test_host_url</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="oauthdata"><a name="OAuthData"></a> OAuthData</h3>
+<p><code>OAuthData</code> is a <code>Struct</code> type with the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>state</td>
+<td>String</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="nullresponse_1"><a name="NullResponse"></a> NullResponse</h3>
+<p><code>NullResponse</code> is a <code>Struct</code> with no specified fields</p>
+<p><a href="https://git.corp.yahoo.com/pages/ApexTest/Swagger-UI/parsec/swagger-ui/?url=https://git.corp.yahoo.com/pages/ApexHostingBeta/project_1083/swagger-json/test_swagger.json">Swagger URL</a></p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Getting Started
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../apex_reserved_swaggerui/" title="Swagger UI" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Swagger UI
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="https://s.yimg.com/qs/mall/yps/common/application-min.2017-0802-151412.js"></script>
+
+      <script src="../assets/javascripts/apex-custom.js"></script>
+      
+      
+
+      
+    
+    
+      
+    
+  </body>
+</html>
